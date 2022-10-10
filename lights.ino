@@ -57,9 +57,8 @@ void setLeds()
 }
 
 
-
+//Old_Loop Based code
 void loop() {
-  // put your main code here, to run repeatedly:
   //RED GREEN BLUE
 
 //if(digitalRead(3)==HIGH)

@@ -9,7 +9,8 @@
 CRGB leds[NUM_LEDS];
 bool LEDSSET = false;
 
-void setup() {
+void setup() 
+{
   pinMode(3, INPUT);     
   // put your setup code here, to run once:
   FastLED.addLeds<WS2811,LED_PIN, RGB>(leds,NUM_LEDS);
@@ -39,7 +40,7 @@ void setLeds()
   while(digitalRead(3)==HIGH)
   {
       delay(5000);
-    }
+  }
   delay(5000);
 
     for(int i=0; i<60; i++)
@@ -58,8 +59,9 @@ void setLeds()
 
 
 //Old_Loop Based code
-void loop() {
-  //RED GREEN BLUE
+void old_loop() 
+{
+//RED GREEN BLUE
 
 //if(digitalRead(3)==HIGH)
 //{
